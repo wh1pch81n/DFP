@@ -7,16 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F3586B31D922164003D4F57 /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F3586B21D922164003D4F57 /* GoogleMobileAds.framework */; };
 		2F4CCFB31D8DB01B003B3DA5 /* DFP.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F4CCFB11D8DB01B003B3DA5 /* DFP.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2F4CCFC91D8DB33A003B3DA5 /* DFP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4CCFC81D8DB33A003B3DA5 /* DFP.swift */; };
-		2F4CCFCF1D8DBDCB003B3DA5 /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F4CCFBF1D8DB16E003B3DA5 /* GoogleMobileAds.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2F3586B21D922164003D4F57 /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMobileAds.framework; path = abc/GoogleMobileAds.framework; sourceTree = "<group>"; };
 		2F4CCFAE1D8DB01B003B3DA5 /* DFP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DFP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F4CCFB11D8DB01B003B3DA5 /* DFP.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DFP.h; sourceTree = "<group>"; };
 		2F4CCFB21D8DB01B003B3DA5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2F4CCFBF1D8DB16E003B3DA5 /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMobileAds.framework; sourceTree = "<group>"; };
 		2F4CCFC81D8DB33A003B3DA5 /* DFP.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DFP.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -25,7 +25,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2F4CCFCF1D8DBDCB003B3DA5 /* GoogleMobileAds.framework in Frameworks */,
+				2F3586B31D922164003D4F57 /* GoogleMobileAds.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,7 +62,7 @@
 		2F4CCFB91D8DB096003B3DA5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				2F4CCFBF1D8DB16E003B3DA5 /* GoogleMobileAds.framework */,
+				2F3586B21D922164003D4F57 /* GoogleMobileAds.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -266,7 +266,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/**",
 				);
 				INFOPLIST_FILE = DFP/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -292,7 +292,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/**",
 				);
 				INFOPLIST_FILE = DFP/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
